@@ -7,7 +7,7 @@ import { TActionTypes } from "../types";
 
 const initialState = { value: 0 };
 
-type TState = typeof initialState;
+export type TState = typeof initialState;
 
 const counterReducer = (state: TState = initialState, action: TActionTypes) => {
   switch (action.type) {
