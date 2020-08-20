@@ -1,13 +1,14 @@
-export type Action = { type: string  };
+import {
+  INCREMENT_COUNTER,
+  DECREMENT_COUNTER,
+} from "../constants/counterConstatns";
 
-export const INCREMENT_COUNTER: string = "INCREMENT_COUNTER";
-export const DECREMENT_COUNTER: string = "DECREMENT_COUNTER";
+export const incrementCounter = () =>
+  ({
+    type: INCREMENT_COUNTER,
+  } as const);
 
-
-export const incrementCounter = () => ({
-   type: INCREMENT_COUNTER
-});
-
-export const decrementCounter = () => ({
-    type: DECREMENT_COUNTER
-});
+export const decrementCounter = () =>
+  ({
+    type: DECREMENT_COUNTER,
+  } as const);
