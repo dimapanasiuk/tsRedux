@@ -13,7 +13,6 @@ interface IAppProps {
 
 class App extends React.Component<IAppProps> {
   render() {
-    console.log("props");
     return (
       <div>
         <button onClick={this.props.incrementCounter}>Increment</button>

@@ -12,7 +12,6 @@ interface IApp {
 
 class MyApp extends App<IApp> {
   render() {
-    console.log("this.props", this.props);
     const { Component, pageProps, store } = this.props;
 
     return (
