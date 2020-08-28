@@ -1,7 +1,7 @@
 import {
   DECREMENT_COUNTER,
   INCREMENT_COUNTER,
-} from "../constants/counterConstatns";
+} from "../constants/counterConstants";
 
 import { TActionTypes } from "../types";
 
